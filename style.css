@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+  background-color: hsl(235, 18%, 26%);
+  padding-inline: 2rem;
+}
+main {
+  background-color: white;
+  max-width: 60rem;
+  max-height: 45rem;
+  margin: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 100px;
+  border-radius: 25px;
+}
+
+.section-img {
+  padding: 25px;
+}
+
+.section-artc {
+  padding: 100px 50px 25px 80px;
+}
+
+#header-p {
+  font-size: 3rem;
+  font-weight: 800;
+  padding-bottom: 25px;
+}
+
+.content {
+  padding: 25px 0;
+}
+
+.content-p {
+  display: inline;
+}
+
+.icon {
+  vertical-align: middle;
+  padding: 10px 0;
+}
+
+.e-mail-send {
+  width: 100%;
+  height: 3rem;
+  border-radius: 8px;
+}
+
+.e-mail-send:hover {
+  cursor: pointer;
+}
+
+#e-mail {
+  margin-bottom: 20px;
+  padding-left: 2rem;
+  font-size: 1rem;
+  border: 1px solid grey;
+}
+
+#send-btn {
+  background-color: hsl(235, 18%, 26%);
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#send-btn:hover {
+  background-color: hsl(4, 100%, 67%);
+}
+
+label {
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.labels{
+  display: flex;
+  justify-content: space-between;
+  
+  margin-bottom: 5px;
+}
+
+.none{
+  display: none;
+}
+
+.error{
+  color:hsl(4, 100%, 67%) ;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+/* @media (max-width: 750px) {
+  main {
+    
+    max-width: 30rem;
+    margin: auto;
+  }
+
+  #header-p {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  #e-mail{
+    margin-bottom: 20px;
+    padding-left: 2rem;
+    font-size: 1rem;
+    border: 1px solid grey;
+  }
+
+  #send-btn{
+    background-color: hsl(235, 18%, 26%);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .e-mail-send {
+    width: 100%;
+    height: 3rem;
+    border-radius: 8px;
+  }
+
+  label{
+    font-size: .8rem;
+    font-weight: 800;
+  }
+
+  p {
+    padding: 15px 0px;
+  }
+  .content {
+    margin: 20px 0px 50px;
+  }
+  .content-p {
+    display: inline;
+  }
+  .section_artc {
+    padding: 25px;
+  }
+  .icon {
+    display: inline;
+    vertical-align: middle;
+    margin-right: 15px;
+  }
+} */
+
+footer {
+  font-size: 11px;
+  text-align: center;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
+}
