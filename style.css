@@ -6,159 +6,154 @@
 }
 
 body {
-  background-color: hsl(235, 18%, 26%);
+  background-color: hsl(234, 29%, 20%);
   padding-inline: 2rem;
 }
+
 main {
   background-color: white;
-  max-width: 60rem;
-  max-height: 45rem;
-  margin: auto;
+  max-width: 55rem;
+  max-height: 50rem;
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: center;
+  margin: auto;
   margin-top: 100px;
   border-radius: 25px;
 }
-
-.section-img {
-  padding: 25px;
+ul {
+  list-style: none;
+  margin: 2rem 0;
 }
 
-.section-artc {
-  padding: 100px 50px 25px 80px;
+li {
+  margin: 1rem 0;
 }
 
-#header-p {
-  font-size: 3rem;
-  font-weight: 800;
-  padding-bottom: 25px;
+section {
+  padding: 1.5rem;
+}
+.first_section {
+  padding: 6rem 0.8rem 2rem 4rem;
 }
 
-.content {
-  padding: 25px 0;
+.success_section{
+  padding: 3rem 4rem 3rem;
 }
 
-.content-p {
-  display: inline;
-}
-
-.icon {
-  vertical-align: middle;
-  padding: 10px 0;
-}
-
-.e-mail-send {
-  width: 100%;
-  height: 3rem;
-  border-radius: 8px;
-}
-
-.e-mail-send:hover {
-  cursor: pointer;
-}
-
-#e-mail {
-  margin-bottom: 20px;
-  padding-left: 2rem;
-  font-size: 1rem;
-  border: 1px solid grey;
-}
-
-#send-btn {
-  background-color: hsl(235, 18%, 26%);
-  color: white;
-  border: none;
-  font-size: 1rem;
+.success_adress{
   font-weight: 700;
 }
 
-#send-btn:hover {
-  background-color: hsl(4, 100%, 67%);
+.none {
+  display: none;
 }
 
-label {
-  font-size: 0.8rem;
-  font-weight: 800;
+.tomato{
+  color: hsl(4, 100%, 67%);
+}
+
+.header_p {
+  font-size: 3rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.icon_list {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+#submit_form{
+  margin-top: 3.5rem;
 }
 
 .labels{
   display: flex;
   justify-content: space-between;
-  
-  margin-bottom: 5px;
+  margin-bottom: .4rem;
 }
 
-.none{
-  display: none;
+.label{
+  font-size: .8rem;
+  font-weight: 700;
 }
 
-.error{
-  color:hsl(4, 100%, 67%) ;
-  font-size: 0.8rem;
-  font-weight: 800;
+.send{
+  width: 100%;
+  height: 3.5rem;
+  border-radius: 10px;
+  margin-bottom: 1rem ;
 }
 
-/* @media (max-width: 750px) {
-  main {
-    
-    max-width: 30rem;
-    margin: auto;
-  }
+#e-mail{
+  border: 1px solid grey;
+  font-size: 1rem;
+  padding-left: 25px;
+}
 
-  #header-p {
-    font-size: 2rem;
-    font-weight: 700;
-  }
+#e-mail:hover{
+  cursor: pointer;
+}
 
-  #e-mail{
-    margin-bottom: 20px;
-    padding-left: 2rem;
-    font-size: 1rem;
-    border: 1px solid grey;
-  }
+.button{
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+}
 
-  #send-btn{
-    background-color: hsl(235, 18%, 26%);
-    color: white;
-    border: none;
-    font-size: 1rem;
-    font-weight: 700;
-  }
+.button_dismiss{
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  width: 100%;
+  height: 3.5rem;
+  border-radius: 10px;
+  margin-top: 3rem;
+}
 
-  .e-mail-send {
-    width: 100%;
-    height: 3rem;
-    border-radius: 8px;
-  }
+#success_img{
+  margin-bottom: 1.5rem;
+}
 
-  label{
-    font-size: .8rem;
-    font-weight: 800;
-  }
+.button_dismiss:hover{
+  cursor: pointer;
+  background-color: tomato;
+  box-shadow: 0px 5px 45px hsla(4, 100%, 67%, 0.502);
+}
 
-  p {
-    padding: 15px 0px;
-  }
-  .content {
-    margin: 20px 0px 50px;
-  }
-  .content-p {
-    display: inline;
-  }
-  .section_artc {
-    padding: 25px;
-  }
-  .icon {
-    display: inline;
-    vertical-align: middle;
-    margin-right: 15px;
-  }
-} */
+.button:hover{
+  cursor: pointer;
+  background-color: tomato;
+  box-shadow: 0px 5px 45px hsla(4, 100%, 67%, 0.502);
+}
 
-footer {
+.red{
+  border: 1px solid tomato;
+  background-color: rgb(248, 175, 162);
+  color: tomato;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
   font-size: 11px;
   text-align: center;
 }
-footer a {
+.attribution a {
   color: hsl(228, 45%, 44%);
 }

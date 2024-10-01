@@ -13,7 +13,7 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Tomato: hsl(4, 100%, 67%)
+- Tomato: 
 
 ### Neutral
 

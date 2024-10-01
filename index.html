@@ -26,51 +26,86 @@
   </head>
   <body>
     <main>
-      <section class="section-img">
-        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" />
-      </section>
-      <section class="section-artc">
+      <section class="first_section">
         <article>
-          <p id="header-p">Stay updated!</p>
+          <p class="header_p">Stay updated!</p>
           <p>Join 60,000+ product managers receiving monthly updates on:</p>
-          <div class="content">
-            <img src="./assets/images/icon-list.svg" alt="" class="icon" />
-            <p class="content-p">Product discovery and building what matters</p>
-            <br />
-            <img src="./assets/images/icon-list.svg" alt="" class="icon" />
-            <p class="content-p">Measuring to ensure updates are a success</p>
-            <br />
-            <img src="./assets/images/icon-list.svg" alt="" class="icon" />
-            <p class="content-p">And much more!</p>
-          </div>
+          <ul>
+            <li>
+              <img
+                src="./assets/images/icon-list.svg"
+                alt=""
+                class="icon_list"
+              />Product discovery and building what matters
+            </li>
+            <li>
+              <img
+                src="./assets/images/icon-list.svg"
+                alt=""
+                class="icon_list"
+              />Measuring to ensure updates are a success
+            </li>
+            <li>
+              <img
+                src="./assets/images/icon-list.svg"
+                alt=""
+                class="icon_list"
+              />And much more!
+            </li>
+          </ul>
         </article>
-        <form action="./success.html" method="get" class="send">
-          <div class="labels">
-            <label for="e-mail">Email address</label>
-            <p class="error none">Valid e-mail required<p>
-          </div>
 
+        <!-- Sign-up form start -->
+        <form action="" id="submit_form">
+          <div class="labels">
+            <label for="e-mail" class="label">Email address</label>
+            <label for="e-mail" class="label error tomato none">Valid email required</label>
+          </div>
           <input
             type="email"
-            name="e-mail"
             id="e-mail"
-            placeholder="email@company.com"
-            class="e-mail-send"
-            
+            name="e-mail"
+            placeholder="email@company.com "
+            class="input send"
           />
-
-          <button type="submit" class="e-mail-send" id="send-btn">
-            Subscribe to monthly newsletter
-          </button>
+          <button class="button send">Subscribe to monthly newsletter</button>
         </form>
+        <!-- Sign-up form end -->
       </section>
+      <section class="second_section">
+        <img
+          src="./assets/images/illustration-sign-up-desktop.svg"
+          alt=""
+          id="img_desktop"
+        />
+        <img
+          src="./assets/images/illustration-sign-up-mobile.svg"
+          alt=""
+          id="img_mobile"
+          class="none"
+        />
+      </section>
+      <!-- Success message start -->
+      <section class="success_section none">
+        <img src="./assets/images/icon-success.svg" alt="" id="success_img" />
+        <article>
+          <p class="header_p">Thanks for subscribing!</p>
+          <p>
+            A confirmation email has been sent to <span class="success_adress">ash@loremcompany.com</span> Please
+            open it and click the button inside to confirm your subscription.
+          </p>
+          <button id="return" class="button_dismiss">Dismiss message</button>
+        </article>
+      </section>
+      <!-- Success message end -->
     </main>
-    <footer class="attribution">
+
+    <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </footer>
-    <script src="script.js"></script>
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>
