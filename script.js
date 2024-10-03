@@ -9,35 +9,43 @@ const scndSect = document.querySelector(".second_section");
 const main = document.querySelector("main");
 const dismiss = document.querySelector(".button_dismiss");
 
-// let email = input.value;
+function success() {
+    firstSect.classList.toggle("none")
+    scndSect.classList.toggle("none")
+    successPage.classList.toggle("none")
+    main.style.maxWidth = ("26rem")
+}
 
-// function validateEmail (email){
-//     const pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-//     return pattern.test(email);
-// }
+function validateEmail (email){
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    return emailRegex.test(email)
+}
 
 btn.addEventListener("click", (e) => {
-    e.preventDefault();
-   if (input.value !==""){
-    firstSect.classList.toggle("none");
-    scndSect.classList.toggle("none");
-    successPage.classList.toggle("none");
-    main.style.maxWidth = "30rem"
-   }
-   else {
-    error.classList.toggle("none");
-    input.classList.toggle("red");
-   }
+    e.preventDefault()
+    const email = input.value.trim()
+
+    if (validateEmail(email)){
+        success()
+        successAdress.innerText = email
+        input.value = "";
+    } 
+    else{
+        error.style.display = ("block")
+        input.classList.add("red")
+    }
 })
 
 dismiss.addEventListener("click", () => {
-    firstSect.classList.toggle("none");
-    scndSect.classList.toggle("none");
-    successPage.classList.toggle("none");
-    main.style.maxWidth = "55rem"
-    input.value = "";
-    error.classList.toggle("none");
-    input.classList.toggle("red");
+    firstSect.classList.toggle("none")
+    scndSect.classList.toggle("none")
+    successPage.classList.toggle("none")
+    main.style.maxWidth = ("55rem")
+    error.style.display = ("none")
+    input.classList.remove("red")
 })
+
+
+
 
 
